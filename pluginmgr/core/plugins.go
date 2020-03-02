@@ -7,6 +7,7 @@ import (
 	"github.com/iotaledger/goshimmer/plugins/config"
 	"github.com/iotaledger/goshimmer/plugins/gossip"
 	"github.com/iotaledger/goshimmer/plugins/gracefulshutdown"
+	"github.com/iotaledger/goshimmer/plugins/metrics"
 	"github.com/iotaledger/goshimmer/plugins/logger"
 	"github.com/iotaledger/goshimmer/plugins/portcheck"
 	"github.com/iotaledger/goshimmer/plugins/tangle"
@@ -23,4 +24,5 @@ var PLUGINS = node.Plugins(
 	tangle.PLUGIN,
 	gossip.PLUGIN,
 	gracefulshutdown.PLUGIN,
+	metrics.PLUGIN,
 )
